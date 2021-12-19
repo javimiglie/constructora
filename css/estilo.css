@@ -1,0 +1,297 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        h1 {
+            font-family: 'Alfa Slab One', cursive;
+            font-size: 3rem;
+            text-align: center;
+            letter-spacing: 7px;
+            color: rgb(171, 248, 240);
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 2.5rem;
+            letter-spacing: 5px;
+            text-align: center;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+        
+        p {
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+            line-height: 2rem;
+            font-size: 1.5rem;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 5px auto;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            text-align: center;
+        }
+        
+        nav li a {
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+            margin: 5px;
+        }
+        
+        nav li a:hover {
+            color: turquoise;
+        }
+        
+        .menu1 {
+            margin: 30px auto;
+            height: auto;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .menu1 div img {
+            padding: 10px;
+        }
+        
+        .menu1 h2 {
+            text-align: center;
+        }
+        
+        .menu2 {
+            margin: 30px auto;
+            height: 250px;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .caja1 {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .caja2 {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .caja3 {
+            background-color: white;
+            color: black;
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .menu2 h3 {
+            padding: 10px;
+        }
+        
+        .menu2 p {
+            color: darkgrey;
+            margin: 10px 10px;
+        }
+        
+        .menu3 {
+            width: 80%;
+            margin: auto;
+        }
+        
+        .menu3 .caja {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .cajaA {
+            width: 400px;
+            height: auto;
+            margin: auto;
+        }
+        
+        .menu3 h2 {
+            color: rgb(0, 106, 205);
+            margin: auto;
+            padding-bottom: 20px;
+        }
+        
+        .menu3 h3 {
+            color: steelblue;
+        }
+        
+        .menu3 p {
+            font-size: 1.2rem;
+        }
+        
+        .sistC {
+            width: 90%;
+            margin: auto;
+        }
+        
+        .wood {
+            display: flex;
+            padding: 10px;
+        }
+        
+        .wood img {
+            margin-right: 15px;
+        }
+        
+        .steel {
+            display: flex;
+            padding: 10px;
+        }
+        
+        .steel img {
+            margin-left: 15px;
+        }
+        
+        .galeriaModelos {
+            width: 90%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 10px;
+        }
+        
+        .modelo1 {
+            grid-area: modelo1;
+        }
+        
+        .modelo2 {
+            grid-area: modelo2;
+        }
+        
+        .modelo3 {
+            grid-area: modelo3;
+        }
+        
+        .modelo4 {
+            grid-area: modelo4;
+        }
+        
+        .modelo5 {
+            grid-area: modelo5;
+        }
+        
+        .galeriaModelos img {
+            width: 100%;
+        }
+        
+        .galeriaModelos p {
+            color: steelblue;
+        }
+        
+        .galeriaModelos div img {
+            border: solid rgba(128, 128, 128, 0.918) 2px;
+            opacity: .7;
+        }
+        
+        .galeriaModelos div img:hover {
+            opacity: 1;
+            border: solid white 2px;
+        }
+        
+        .contacto {
+            width: 95%;
+            margin: auto;
+        }
+        
+        footer {
+            text-align: center;
+            color: rgb(171, 248, 240);
+            margin: 20px;
+        }
+        
+        @media only screen and (max-width: 1024px) {
+            body {
+                width: 90%;
+            }
+            h1 {
+                font-size: 2.5rem;
+                letter-spacing: 5px;
+            }
+            h2 {
+                font-size: 2rem;
+                letter-spacing: 3px;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            .menu1 {
+                width: 90%;
+                margin: auto;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .menu1 img {
+                width: 400px;
+                margin: auto;
+            }
+            .menu1 p {
+                margin: auto;
+            }
+            .menu2 {
+                width: 90%;
+                height: auto;
+            }
+            .sistC {
+                width: 90%;
+            }
+            .wood {
+                width: 90%;
+                flex-wrap: wrap;
+            }
+            .wood img {
+                width: 300px;
+                margin: auto;
+            }
+            .steel {
+                width: 90%;
+                flex-wrap: wrap;
+            }
+            .steel img {
+                width: 300px;
+                margin: auto;
+            }
+            .galeriaModelos {
+                width: 90%;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 10px;
+            }
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .menu2 {
+                flex-wrap: wrap;
+            }
+            .galeriaModelos {
+                width: 90%;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                gap: 10px;
+            }
+        }
