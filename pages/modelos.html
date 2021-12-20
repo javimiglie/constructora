@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto+Slab:wght@300&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Constructora Eiffel - Modelos</title>
 </head>
 
 <body>
     <header>
-        <h1>
+        <h1 class="wow animate__animated animate__pulse">
             CONSTRUCTORA EIFFEL
         </h1>
         <nav>
@@ -38,7 +40,7 @@
     </header>
     <main>
         <section>
-            <h2>
+            <h2 class="wow animate__animated animate__heartBeat">
                 Modelos Exclusivos
             </h2>
             <div class="galeriaModelos">
@@ -71,8 +73,12 @@
         </section>
     </main>
     <footer>
-        <p>Constructora Eiffel 2021 - Todos los derechos reseervados - Realizado por Javier Miglierini</p>
+        <p class="wow animate__animated animate__zoomInDown">Constructora Eiffel 2021 - Todos los derechos reseervados - Realizado por Javier Miglierini</p>
     </footer>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

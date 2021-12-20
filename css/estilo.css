@@ -5,7 +5,7 @@
         }
         
         body {
-            background-color: black;
+            background-image: linear-gradient(black, rgb(5, 5, 66));
             color: white;
         }
         
@@ -85,6 +85,11 @@
             color: black;
             text-align: center;
             margin: 10px;
+            transition: 2s;
+        }
+        
+        .caja1:hover {
+            background-color: aquamarine;
         }
         
         .caja2 {
@@ -92,6 +97,11 @@
             color: black;
             text-align: center;
             margin: 10px;
+            transition: 2s;
+        }
+        
+        .caja2:hover {
+            background-color: aquamarine;
         }
         
         .caja3 {
@@ -99,6 +109,11 @@
             color: black;
             text-align: center;
             margin: 10px;
+            transition: 2s;
+        }
+        
+        .caja3:hover {
+            background-color: aquamarine;
         }
         
         .menu2 h3 {
@@ -146,6 +161,35 @@
             margin: auto;
         }
         
+        .sistC h2 {
+            animation-name: anima;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-delay: 0s;
+        }
+        
+        @keyframes anima {
+            20% {
+                color: rgb(185, 247, 247);
+            }
+            40% {
+                color: rgb(159, 243, 243);
+            }
+            60% {
+                color: rgb(129, 247, 247);
+            }
+            80% {
+                color: rgb(159, 243, 243);
+                ;
+            }
+            90% {
+                color: rgb(201, 247, 247);
+            }
+            100% {
+                color: rgb(227, 248, 248);
+            }
+        }
+        
         .wood {
             display: flex;
             padding: 10px;
@@ -170,7 +214,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            gap: 10px;
+            gap: 40px;
         }
         
         .modelo1 {
@@ -204,11 +248,13 @@
         .galeriaModelos div img {
             border: solid rgba(128, 128, 128, 0.918) 2px;
             opacity: .7;
+            transition: all 1.5s;
         }
         
         .galeriaModelos div img:hover {
             opacity: 1;
             border: solid white 2px;
+            transform: scale(1.2, 1.2);
         }
         
         .contacto {
