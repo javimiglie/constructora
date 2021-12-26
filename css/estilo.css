@@ -331,6 +331,17 @@
         }
         
         @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.8rem;
+                letter-spacing: 5px;
+            }
+            h2 {
+                font-size: 1.5rem;
+                letter-spacing: 3px;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
             .menu2 {
                 flex-wrap: wrap;
             }
